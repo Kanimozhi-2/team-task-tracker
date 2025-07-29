@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+
+
+/*TASK Page Nav Bar */
+.task-body {
+    display: flex;
+    overflow-x: hidden;
+
+}
+
+
+/*............................................... FOR NAVBAR .................................... */
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 100vh;
+    background-color: aqua;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.295);
+
+}
+
+.navbar>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+}
+
+/* ...................................ADMIN NAME.......................................... */
+.navbar>div>h1 {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif
+}
+
+
+/*.......................... ... PROFILE IMAGE........................... .............*/
+.navbar>div>div {
+    margin-top: 30%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('./assets/char1.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 15px 12px rgb(9, 207, 241);
+
+}
+
+/* ............................navigating links......................................... */
+.navbar>ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar>ul>li {
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    transition: all 0.5 ease-in-out;
+
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 14px 90px;
+    font-weight: 500;
+    font-family: roboto;
+
+
+
+
+}
+
+.navbar>ul>li:hover {
+    background-color: rgb(11, 226, 241);
+    color: white;
+    box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.514);
+
+}
+
+.navbar>ul>li:hover a {
+    color: white;
+}
+
+/* ...........................TASK SECTION........................................ */
+.add-task-main {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.add-task-section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 100%;
+
+
+}
+
+.add-task-section>div {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.add-task-section>div>h1 {
+    padding: 10px;
+
+}
+
+.task-btn {
+    background-color: aqua;
+    margin: 0 20px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+
+/* .............................TASK LIST HEAD>>>>>>>>>>>>>>>>>>>>> */
+
+.add-task-head {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.add-task-head>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 15px 25px;
+    box-shadow: 3px 2px 4px 1px #ccc;
+    background-color: gray;
+
+}
+
+.add-task-head>li>h2 {
+    color: black;
+    font-family: roboto;
+
+
+}
+
+.add-task-head>li>div {
+    display: flex;
+    column-gap: 60px;
+    margin-right: 5px;
+
+}
+
+
+/* ...........................TASK LIST........................................ */
+.add-task-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+.add-task-list>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 20px 25px;
+    box-shadow: 3px 2px 4px 1px #ccc;
+    border-radius: 7px;
+
+}
+
+/* .....................INSIDE LIST ELEMENTS ......................................... */
+
+.add-task-list>li>h2:nth-child(1) {
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.add-task-list>li>h2:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.add-task-list>li>h2:nth-child(3) {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.add-task-list>li>h2:nth-child(4) {
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-size: 1rem;
+
+}
+
+.add-task-list>li>h2:nth-child(5) {
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-size: 1rem;
+
+}
+
+.line {
+    height: 1px;
+    background-color: black;
+    box-shadow: 0 0 1px 1px #ccc;
+    margin: 10px 0;
+
+
+}
+
+/* ...........................TASK LIST UPDATE BTN........................................ */
+
+
+
+
+
+.update-btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 243, 20, 0.863);
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.1s linear;
+
+}
+
+.update-btn:hover {
+    background-color: rgb(27, 235, 27);
+    box-shadow: 0 0 10px 1px rgb(0, 243, 20, 0.863);
+    font-weight: 700;
+    color: aliceblue;
+}
+
+/* ...........................TASK LIST DELETE BTN........................................ */
+.delete-btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.788);
+    color: azure;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.1s linear;
+    margin-left: 20px;
+
+}
+
+.delete-btn:hover {
+    background-color: rgb(255, 7, 7);
+    box-shadow: 0 0 10px 1px rgb(255, 0, 0, 0.788);
+    color: aliceblue;
+    font-weight: 700;
+
+}
+
+
+
+/* .......................................TASK ADDER CONTAINER....................................... */
+
+
+.task-adder {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    width: 40vw;
+    height: 70vh;
+    background-color: white;
+    right: 25%;
+    top: 15%;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+
+
+
+}
+
+.task-adder>div {
+    margin: 7% 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.task-adder>div>h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+/* ......................TASK INPUT CONTAINER ....................................*/
+
+
+.task-input {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    width: 100%;
+}
+
+/* ......................TASK ADDER LABEL ....................................*/
+.task-input>label {
+    display: flex;
+    justify-content: space-between;
+
+    color: rgba(0, 0, 0, 0.74);
+    width: 75%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* ......................TASK ADDER INPUT BOX ....................................*/
+.task-input>label>input {
+
+    color: gray;
+    padding: 10px 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    transition: all 0.5 ease-in-out;
+    border-radius: 5px;
+    font-size: 19px;
+    resize: none;
+
+    box-sizing: border-box;
+
+
+}
+
+.task-input>label>input[type=date] {
+    text-transform: uppercase;
+    text-decoration: double;
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+#des {
+    padding-bottom: 50px;
+}
+
+
+/* ......................ADDER TAsK BUTTON ....................................*/
+.adder-btn {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-right: 10%;
+
+
+
+    /* ......................CANCELTAsK BUTTON ....................................*/
+}
+
+.cancel-btn {
+    padding: 20px 4%;
+    margin-top: 30px;
+
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px 1px #ccc;
+    transition: all 0.5 ease-in-out;
+
+}
+
+/* ......................ADD TAsK BUTTON ....................................*/
+.add-btn {
+    padding: 20px 5%;
+    margin-top: 30px;
+
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px 1px #ccc;
+    transition: all 0.5 ease-in-out;
+}
+
+
+
+/* TASK UPDATER */
+
+#task-updater {
+    /* visibility: hidden;     */
+    display: flex;
+    position: fixed;
+    width: 40vw;
+    height: 70vh;
+    background-color: white;
+    right: 25%;
+    top: 15%;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<INDEX PAGE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/*............................................MY DETAILS CONTAINER................................................ */
+
+
+.my-detail-container{
+     /* background-color: aqua; */
+     margin-left: 20px; 
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 2px;
+
+
+}
+.my-detail-container>div{
+    display: flex;
+     flex-direction: column;
+     gap:10px;
+     margin: 25px;
+     margin-bottom:0 ;
+
+}
+.my-detail-container>div>h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    
+    
+}
+.my-detail-container>div>h1::first-letter{
+    color: red;
+}
+
+
+
+.my-details-card{
+   
+    height: 85%;
+    display: flex;
+  
+    
+    
+   
+}
+.my-details-card>div{
+     background-color:rgba(255, 255, 255, 0.151);
+     border-radius:15px ;
+     border: none;
+     box-shadow: 1px 3px 2px 1px gray;
+     display: flex;
+     justify-content: space-between;
+     gap: 50px;
+     width: 95%;
+     height: 100%;
+     padding: 25px;
+}
+.img{
+    background: url('./assets/char1.jpg');
+     width: 50%;
+     height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*............................................MY INFO................................................ */
+.info{
+ 
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin-top: 30px;
+
+     
+}
+.info>div{
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    
+    
+}
+.info>div>h2{
+    width: 22%;
+    color: rgb(0, 0, 0);
+    position:relative;
+    
+}
+.info>div>h2>span{
+    position: absolute;
+    right: 12px;
+   
+    
+}
+.info>div>h1{
+     font-weight: 600;
+    font-size: 27px;
+   
+}
+/*............................................MY SKills................................................ */
+.skill{
+   
+    width: 115%;
+    align-self: flex-start;
+    font-size: 25px;
+    font-weight:700 ;
+    position: relative;
+}
+.info>div>h3>span{
+    position: absolute;
+    right: -16px;
+
+}
+.info>div>p{
+    font-size: 17px;
+    line-height: 2;
+    margin: 0 15px;
+    color: black;
+    font-weight: 600;
+    
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="task-body">
+
+
+
+    <!-----------------------------------------NAVBAR section-------------------------------------------->
+    <header class="header">
+        <nav class="navbar">
+            <div>
+                <div></div>
+                <h1>ADMIN</h1>
+            </div>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./task.html">TASKS</a></li>
+                <li><a href="#">REPORT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">FEED BACK</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <!-----------------------------------------task section---------------------------------------------- -->
+    <main class="add-task-main">
+        <div class="add-task-section">
+            <div>
+                <h1>TASKS</h1>
+                <button onclick="openTaskAdder()" class="task-btn">CREATE TASK</button>
+
+            </div>
+            <div class="line"></div>
+
+            <div class="add-task-list-section">
+                <ul class="add-task-head">
+                    <li>
+                        <h2>SNO</h2>
+                        <h2>TASK</h2>
+                        <h2>STATUS</h2>
+                        <h2>START DATE</h2>
+                        <h2>FINAL DATE</h2>
+                        <div>
+                            <h2>EDIT</h2>
+                            <h2>DELETE</h2>
+                        </div>
+
+                    </li>
+
+
+
+                    <ul id="add-task-list" class="add-task-list">
+
+                        <!-- -----------------------------------TASK LIST------------------------------------------------------------->
+
+                    </ul>
+                </ul>
+            </div>
+            </hr>
+
+
+
+    </main>
+
+
+
+
+    <!-- ------------------------------------TASK ADDDER SECTION---------------------------- ----------------- -->
+    <div id="task-adder" class="task-adder">
+        <div>
+
+            <h1>CREATE TASK</h1>
+
+            <!-- -------------------------TASK INPUT------------------------------------------------------------------->
+
+            <div class="task-input">
+                <label for="task"> TASK :
+                    <input id="task" type="text">
+                </label>
+                <label for="start-date">START DATE :
+                    <input id="start-date" type="date">
+                </label>
+                <label for="final-date">FINAL DATE :
+                    <input id="final-date" type="date">
+                </label>
+                <label for="des"> TASK DESCRIPTION :
+                    <input id="des" type="text">
+                </label>
+            </div>
+
+            <!------------------------TASK HANDLE BUTTONS-------------------------------------------------------------->
+
+            <div class="adder-btn">
+                <button onclick="closeAdder()" class="cancel-btn">CANCEL</button>
+                <button onclick="addTask()" class="add-btn">ADD TASK</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- -----------------------------------TASK UPDATER SECTION---------------------------- ------------------->
+    <div id="task-updater" class="task-adder">
+        <div>
+
+            <h1>EDIT TASK</h1>
+
+            <!-- -------------------------TASK INPUT------------------------------------------------------------------->
+
+            <div class="task-input">
+                <label for="utask"> TASK :
+                    <input id="utask" type="text">
+                </label>
+                <label for="ustart-date">START DATE :
+                    <input id="ustart-date" type="date">
+                </label>
+                <label for="ufinal-date">FINAL DATE :
+                    <input id="ufinal-date" type="date">
+                </label>
+                <label for="udes"> TASK DESCRIPTION :
+                    <input id="udes" type="text">
+                </label>
+            </div>
+
+            <!------------------------TASK HANDLE BUTTONS-------------------------------------------------------------->
+
+            <div class="adder-btn">
+                <button onclick="closeAdder()" class="cancel-btn">CANCEL</button>
+                <button id="uadd" class="add-btn">SAVE</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
